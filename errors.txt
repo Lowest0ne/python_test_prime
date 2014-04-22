@@ -1,10 +1,15 @@
 ============================= test session starts ==============================
 platform linux2 -- Python 2.7.6 -- pytest-2.5.1
-collected 0 items / 1 errors
+collected 1 items
 
-==================================== ERRORS ====================================
-________________________ ERROR collecting test_prime.py ________________________
-test_prime.py:1: in <module>
->   from prime import is_prime
-E   ImportError: No module named prime
-=========================== 1 error in 0.02 seconds ============================
+test_prime.py F
+
+=================================== FAILURES ===================================
+_________________________________ test_answer __________________________________
+
+    def test_answer():
+>       assert is_prime(1) == False
+E       TypeError: is_prime() takes no arguments (1 given)
+
+test_prime.py:4: TypeError
+=========================== 1 failed in 0.02 seconds ===========================
