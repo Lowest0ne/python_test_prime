@@ -10,8 +10,12 @@ _________________________________ test_answer __________________________________
     def test_answer():
         assert is_prime(1) == False
         assert is_prime(2) == True
->       assert is_prime(3) == True
-E       assert is_prime(3) == True
+        assert is_prime(3) == True
+        assert is_prime(4) == False
+        assert is_prime(5) == True
+>       assert is_prime(9) == False
+E       assert True == False
+E        +  where True = is_prime(9)
 
-test_prime.py:6: AssertionError
+test_prime.py:9: AssertionError
 =========================== 1 failed in 0.02 seconds ===========================
