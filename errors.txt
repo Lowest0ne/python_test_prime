@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.6 -- pytest-2.5.1
+collected 0 items / 1 errors
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting test_prime.py ________________________
+test_prime.py:1: in <module>
+>   from prime import is_prime
+E   ImportError: No module named prime
+=========================== 1 error in 0.02 seconds ============================
