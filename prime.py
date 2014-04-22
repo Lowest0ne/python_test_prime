@@ -1,3 +1,3 @@
-def is_prime():
+def is_prime( x ):
   return False
 

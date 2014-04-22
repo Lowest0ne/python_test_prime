@@ -8,8 +8,9 @@ test_prime.py F
 _________________________________ test_answer __________________________________
 
     def test_answer():
->       assert is_prime(1) == False
-E       TypeError: is_prime() takes no arguments (1 given)
+        assert is_prime(1) == False
+>       assert is_prime(2) == True
+E       assert is_prime(2) == True
 
-test_prime.py:4: TypeError
+test_prime.py:5: AssertionError
 =========================== 1 failed in 0.02 seconds ===========================
